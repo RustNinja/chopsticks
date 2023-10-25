@@ -1,4 +1,4 @@
-endpoint: wss://parallel-rpc.dwellir.com
+endpoint: wss://rpc.parallel.fi
 mock-signature-host: true
 block: ${env.PARALLEL_BLOCK_NUMBER}
 db: ./parallel.polkadot.db.sqlite
