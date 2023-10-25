@@ -1,4 +1,4 @@
-endpoint: wss://parallel.api.onfinality.io
+endpoint: wss://parallel-rpc.dwellir.com
 mock-signature-host: true
 block: ${env.PARALLEL_BLOCK_NUMBER}
 db: ./parallel.polkadot.db.sqlite
