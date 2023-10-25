@@ -1,0 +1,16 @@
+endpoint: wss://rpc.parallel.fi
+mock-signature-host: true
+block: ${env.PARALLEL_BLOCK_NUMBER}
+db: ./parallel.polkadot.db.sqlite
+
+import-storage:
+  Sudo:
+    Key: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+  System:
+    Account:
+      -
+        -
+          - 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+        - providers: 1
+          data:
+            free: "100000000000000000000000"

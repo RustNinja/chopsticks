@@ -28,7 +28,7 @@ export const configSchema = z
 
 export type Config = z.infer<typeof configSchema>
 
-const CONFIGS_BASE_URL = 'https://raw.githubusercontent.com/AcalaNetwork/chopsticks/master/configs/'
+const CONFIGS_BASE_URL = 'https://raw.githubusercontent.com/rustninja/chopsticks/master/configs/'
 
 export const fetchConfig = async (path: string): Promise<Config> => {
   let file: string
