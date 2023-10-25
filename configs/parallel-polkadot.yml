@@ -1,11 +1,11 @@
-endpoint: wss://rpc.parallel.fi
+endpoint: wss://parallel.api.onfinality.io
 mock-signature-host: true
 block: ${env.PARALLEL_BLOCK_NUMBER}
 db: ./parallel.polkadot.db.sqlite
 
 import-storage:
-  Sudo:
-    Key: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+  LiquidStakingAgentsMembership:
+    Members: [ 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY ] # Alice
   System:
     Account:
       -
