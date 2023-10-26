@@ -1,13 +1,24 @@
-endpoint: wss://heiko-rpc.parallel.fi
-# endpoint: wss://rpc.parallel.fi
+# endpoint: wss://heiko-rpc.parallel.fi
+endpoint: wss://rpc.parallel.fi
 
 mock-signature-host: true
 block: ${env.PARALLEL_BLOCK_NUMBER}
 db: ./parallel.polkadot.db.sqlite
 
 import-storage:
-  LiquidStakingAgentsMembership:
-    Members: [ 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY ] # Alice
+  GeneralCouncil:
+    Members:
+      - 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+      - 246gNkjCexYRsCpdjtVhz35sHjcb21jpqipzT9u4uwKV8iEE
+      - 249LSvsEyxS4VpEJGg62yhYA7sHy1KcgGW6KzACBCLW1RsZF
+      - 21y4X7QDByUjnu5KX9W1H5TbG2wTLPDbhYFHqc4v6Q1nTBnu
+      - 265dERKLvMFwWWvtGNUjQBrHFTT88VcEtb5QYh2Zuj79UGMf
+      - 21XH88Kd5vDLkrZMb4D2eYJAB9yKbycfkYBqAaD1wQQi1uJ8
+  TechnicalCommittee:
+    Members:
+      - 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+      - 246gNkjCexYRsCpdjtVhz35sHjcb21jpqipzT9u4uwKV8iEE
+      - 249LSvsEyxS4VpEJGg62yhYA7sHy1KcgGW6KzACBCLW1RsZF
   System:
     Account:
       -
