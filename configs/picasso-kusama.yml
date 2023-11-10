@@ -1,4 +1,4 @@
-endpoint: wss://rpc.composablenodes.tech
+endpoint: wss://picasso-rpc.dwellir.com
 mock-signature-host: true
 block: ${env.PICASSO_BLOCK_NUMBER}
 db: ./picasso.kusama.db.sqlite
